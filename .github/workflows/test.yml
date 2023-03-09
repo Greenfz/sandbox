@@ -4,11 +4,13 @@ on: [push]
 jobs:
   first:
     runs-on: ubuntu-latest
-    uses: actions/checkout@v3
 
     steps:
     - name: Print environment variables
       run: env
 
+    - name: Print files
+      run: ls -la
+
     - name: RUN TEST FILE
-      run: python3 test.py
+      run: python3 ./test.py
