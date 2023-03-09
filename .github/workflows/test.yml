@@ -4,6 +4,7 @@ on: [push]
 jobs:
   first:
     runs-on: ubuntu-latest
+    uses: actions/checkout@v3
 
     steps:
     - name: Print environment variables
