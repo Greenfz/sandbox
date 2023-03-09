@@ -1,0 +1,13 @@
+name: Checks
+on: [push]
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print environment variables
+      run: env
+
+    - name: RUN TEST FILE
+      run: python3 test.py
